@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inter Milan | Магазин</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-inter-black">
+        <div class="container">
+            <a class="navbar-brand text-inter-blue fw-bold fs-3" href="index.html">INTER</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="history.html">История</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tickets.html">Билеты</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="store.html">Магазин</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Официальный магазин</h2>
+        
+        <!-- Блок фильтрации -->
+        <div class="row mb-4">
+            <div class="col-md-6 mb-2">
+                <input type="text" id="searchInput" class="form-control" placeholder="Поиск товара...">
+            </div>
+            <div class="col-md-6 mb-2">
+                <select id="categoryFilter" class="form-select">
+                    <option value="all">Все категории</option>
+                    <option value="kits">Форма</option>
+                    <option value="accessories">Аксессуары</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Контейнер для товаров -->
+        <div class="row" id="productContainer"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
